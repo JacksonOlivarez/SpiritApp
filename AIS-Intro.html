@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ <style>
+  .center-frontpage{
+  margin-left: 480px; 
+
+}
+.button-frontpage{
+  background-color:transparent;
+        border:3px solid;
+        border-radius:60px;
+        width:110px;
+        height:110px;
+        
+        margin-right:30px;  
+      }       
+      .button-icon-frontpage{
+      height:86px;
+        display: grid;
+  margin-left: 5px;
+        cursor:pointer;
+        
+      }
+
+.center-frontpage-drop{margin-top: 85px;}
+ </style> 
+    
+    
+    <body >
+  <p class="center-frontpage-drop"></p>
+  
+  <img src="images/scissors-emoji.png" class="center-frontpage">
+  
+  <p class="center-frontpage-drop"></p>
+
+    <button onclick="" class="button-frontpage center-frontpage ">
+      <img src="images/rock-emoji.png" class="button-icon-frontpage ">
+    </button>  
+    
+    <button onclick="" class="button-frontpage ">
+      <img src="images/paper-emoji.png" class="button-icon-frontpage center-frontpage">
+    </button>
+
+
+
+    <script>
+
+
+document.querySelector('.js-rock-button').addEventListener('click', ()=>{
+  playGame('rock');
+});
+
+    </script>
+    </body>
+</html>
