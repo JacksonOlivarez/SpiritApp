@@ -3,6 +3,7 @@
 //  Current Room Decorations (Boolean list?)
 //  Clothes Combo
 
+//=======Global Game State=====
 const state = {
     currency = 0,
     characterState = "-1",
@@ -11,9 +12,22 @@ const state = {
     // Second Digit - 0-9: Color/Pattern
     // Third Digit - 0-1: Shirt
     // Fourth Digit - 0-9: Shirt Color
+
     roomState = "000",
     // Format: 000 = Default
     // First Digit - 0-2: Bed Selection
     // Second Digit - 0-2: Rug Selection
     // Third Digit - 0-2: Chair Selection
+}
+
+//===== Constant DOM Elements =====
+
+const currencyDisplay = document.getElementById("currency"); 
+const characterDisplay = document.getElementById("character");
+
+//======= Utility Functions =====
+
+function updateUI(){
+    currencyDisplay.textContent = state.currency;
+    
 }
