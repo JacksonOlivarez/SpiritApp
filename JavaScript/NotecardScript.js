@@ -77,8 +77,9 @@ function finishSet(){
 }
 
 // Function to remove a notecard set
-function removeSet(){
-    
+function removeSet(setToRemoveName){
+    delete allNotecardSets[setToRemoveName];
 }
 
 // Function to edit a notecard set (take input from HTML?)
+// Still workingo n this one
