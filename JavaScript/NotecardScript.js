@@ -10,11 +10,7 @@ allNotecardSets.push(blankNotecards);
 exampleNoteCards["Name"] = "Example Cards"
 exampleNotecards["Card One"] = "Response One";
 exampleNotecards["Card Two"] = "Response Two";
-
-function initialize(){
-    // Create the initial notecards. Only use once per startup
-
-}
+exampleNotecards["Card Three"] = "Response Three";
 
 // Function to pick a set to focus on, return the dictionary of notecards
 
@@ -79,6 +75,14 @@ function finishSet(){
 // Function to remove a notecard set
 function removeSet(setToRemoveName){
     delete allNotecardSets[setToRemoveName];
+}
+
+function getSet(getSetName){
+    if (getSetName in allNotecardSets){
+        return allNotecardSets[getSetName];
+    }
+    console.log("Set Name not found! Searched for " + getSetName);
+    return;
 }
 
 // Function to edit a notecard set (take input from HTML?)
