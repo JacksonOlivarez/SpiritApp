@@ -5,15 +5,15 @@
 
 //=======Global Game State=====
 const state = {
-    currency = 0,
-    characterState = "-1",
+    currency : 0,
+    characterState : "-1",
     // Format: 0000
     // First Digit - 0: Dog, 1: Cat
     // Second Digit - 0-9: Color/Pattern
     // Third Digit - 0-1: Shirt
     // Fourth Digit - 0-9: Shirt Color
 
-    roomState = "000",
+    roomState : "000",
     // Format: 000 = Default
     // First Digit - 0-2: Bed Selection
     // Second Digit - 0-2: Rug Selection
@@ -27,6 +27,8 @@ const characterDisplay = document.getElementById("character");
 
 //======= Utility Functions =====
 state.currency = 1000;
+
+state.currency = 1000
 
 function updateUI(){
     currencyDisplay.textContent = state.currency;
