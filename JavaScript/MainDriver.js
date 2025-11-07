@@ -26,6 +26,7 @@ const currencyDisplay = document.getElementById("currency");
 const characterDisplay = document.getElementById("character");
 
 //======= Utility Functions =====
+state.currency = 1000;
 
 function updateUI(){
     currencyDisplay.textContent = state.currency;
